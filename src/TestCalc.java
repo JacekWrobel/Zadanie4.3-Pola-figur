@@ -3,16 +3,20 @@ public class TestCalc {
         ShapeCalculator shapeCalculator = new ShapeCalculator();
 
         Square square = new Square(5);
-        System.out.println(shapeCalculator.squareArea(square));
+        double squArea = square.squareArea();
+        System.out.println(squArea);
 
         Rectangle rectangle = new Rectangle(5,10);
-        System.out.println(shapeCalculator.rectPerimeter(rectangle));
+        double rectPeri = rectangle.rectPerimeter();
+        System.out.println(rectPeri);
 
         Circle circle = new Circle(5);
-        System.out.println(shapeCalculator.circleArea(circle));
+        double circArea = circle.circleArea();
+        System.out.println(circArea);
 
         Triangle triangle = new Triangle(5,4, 6);
-        System.out.println(shapeCalculator.trianglePerimeter(triangle));
+        double triaPeri = triangle.trianglePerimeter();
+        System.out.println(triaPeri);
 
     }
 }

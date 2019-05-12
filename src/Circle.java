@@ -5,4 +5,7 @@ public class Circle {
     Circle(double r){
         radius = r;
     }
+    double circleArea(){
+        return Pi * radius * radius;
+    }
 }
